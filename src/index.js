@@ -5,16 +5,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HomePage from './pages/Homepage';
+import Categories from './pages/Categories';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route>
+      <Route element={<App />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/categories" element={<Categories />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function

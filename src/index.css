@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:  Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 body {
@@ -117,4 +117,16 @@ hr {
   border: 0;
   border-top: 1px solid #e5e5e5;
   margin: 30px auto !important;
+}
+
+.btn-primary {
+  border: 0;
+  background-color: #0192fa;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+.cat-center {
+  margin: 100px auto !important;
 }
