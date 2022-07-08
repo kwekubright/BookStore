@@ -1,7 +1,7 @@
 ## Bookstore
 
 ## Description
-This website allows math fans to make simple calculations and read a random math-related quote. It was built with React. It is bootstraped with react
+This is a bookstore that has the following features: Display a list of books; Add a book, Remove a selected book. It is built using React.
 
 
 ### Live Demo
