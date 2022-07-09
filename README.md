@@ -6,7 +6,8 @@ This is a bookstore that has the following features: Display a list of books; Ad
 
 ### Live Demo
 
-- Coming soon
+- Netlify: https://tinyurl.com/mr2z3s8h
+- Heroku: https://rcal360.herokuapp.com/
 
 ## Getting Started
 
