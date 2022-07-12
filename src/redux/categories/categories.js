@@ -1,16 +1,13 @@
 export const CHECK_STATUS = 'CHECK_STATUS';
 
 export const initialState = {
-  status: '',
+  status: [],
 };
 
 export default function categoriesReducer(state = initialState, action = {}) {
   switch (action.type) {
     case CHECK_STATUS:
-      return {
-        ...state,
-        status: action.status,
-      };
+      return 'UNDER CONSTRUCTION';
     default:
       return state;
   }
