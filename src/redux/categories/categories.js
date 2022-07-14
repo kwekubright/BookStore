@@ -7,15 +7,15 @@ export const initialState = {
 export default function categoriesReducer(state = initialState, action = {}) {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'UNDER CONSTRUCTION';
+      return { ...state, status: action.status };
     default:
       return state;
   }
 }
 
-export function checkStatus(status) {
+export function checkStatus() {
   return {
     type: CHECK_STATUS,
-    status,
+    status: 'Under construction',
   };
 }
