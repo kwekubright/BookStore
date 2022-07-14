@@ -1,25 +1,24 @@
 export const ADD_BOOK = 'ADD_BOOK';
 export const REMOVE_BOOK = 'REMOVE_BOOK';
-export const EDIT_BOOK = 'EDIT_BOOK';
 
 export const initialState = {
   books: [
     {
-      id: 1,
+      id: '1',
       title: 'Harry Potter and the Chamber of Secrets',
       author: 'J.K. Rowling',
       category: 'Fantasy',
       progress: 50,
     },
     {
-      id: 2,
+      id: '2',
       title: 'The Lord of the Rings',
       author: 'J.R.R. Tolkien',
       category: 'Fantasy',
       progress: 100,
     },
     {
-      id: 3,
+      id: '3',
       title: 'The Hobbit',
       author: 'J.R.R. Tolkien',
       category: 'Fantasy',
@@ -32,29 +31,23 @@ export default function booksReducer(state = initialState.books, action = {}) {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.book];
-    case EDIT_BOOK:
-      return state.map((book) => {
-        if (book.id === action.book.id) {
-          return action.book;
-        }
-        return book;
-      });
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
 }
 
-export function addBook(book) {
+export function removeBook(id) {
   return {
-    type: ADD_BOOK,
-    book,
+    type: REMOVE_BOOK,
+    id,
   };
 }
 
-export function editBook(id, book) {
+export function addBook(book) {
   return {
-    type: EDIT_BOOK,
-    id,
+    type: ADD_BOOK,
     book,
   };
 }

@@ -15,7 +15,7 @@ function HomePage() {
             title={book.title}
             author={book.author}
             category={book.category}
-            book_id={book.id}
+            bookId={book.id}
           />
         ))
         : null}
