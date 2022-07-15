@@ -7,7 +7,6 @@
 
 .book-details .progress {
   width: 35%;
-  border-right: 1px solid #e5e5e5;
 }
 
 .book-details {
@@ -30,5 +29,21 @@
 
 .prog-number {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 400;
+}
+
+.prog-bar {
+  width: 100px;
+  margin-right:15%;
+}
+
+.pr-4 {
+  border-right: 1px solid #e5e5e5;
+  padding-right: 17%;
+}
+
+.button-texty {
+  border: 0;
+  background: none;
+  color: #0192fa;
 }
