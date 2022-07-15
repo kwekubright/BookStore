@@ -32,6 +32,10 @@ button {
   justify-content: center;
 }
 
+.flex-justify-start {
+  justify-content: flex-start !important;
+}
+
 .flex-align-center {
   align-items: center;
 }
